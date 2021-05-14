@@ -7,9 +7,9 @@
       <tr>
         <div>
           <p>現在、生命保険に加入されていますか？</p>
-          <input type="radio" v-on:click="q2" name="insurance">
+          <input type="radio" v-on:click="takeInsurance" name="insurance">
           <label>はい</label>
-          <input type="radio" v-on:click="q2" name="insurance">
+          <input type="radio" v-on:click="takeInsurance" name="insurance">
           <label>いいえ</label>
         </div>
 
@@ -17,9 +17,9 @@
           <p>
             現在入院中ですか。または、最近３ヶ月以内に医師の診断、検査の結果、入院・手術を勧められたこ<br>とはありますか？
           </p>
-          <input type="radio" v-on:click="q3" name="threeMonths">
+          <input type="radio" v-on:click="getHospitalization" name="threeMonths">
           <label>はい</label>
-          <input type="radio" v-on:click="q3" name="threeMonths">
+          <input type="radio" v-on:click="getHospitalization" name="threeMonths">
           <label>いいえ</label>
         </div>
 
@@ -47,10 +47,10 @@ export default {
     };
   },
   methods: {
-    q2() {
+    takeInsurance() {
       this.myInsurance = true;
     },
-    q3() {
+    getHospitalization() {
       this.myHospitalization = true;
     },
   },
