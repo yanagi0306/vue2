@@ -15,45 +15,42 @@ export default new Vuex.Store({
     consultation: '',
   },
   getters: {
-    displaySex:state=>state.sex,
-    displaybirthYear:state=>state.birthYear, 
-    displaybirthMonth:state=>state.birthMonth,
-    displaybirthDay:state=>state.birthDay,
-    displaymyInsurance:state=>state.myInsurance,
-    displaymyHospitalization:state=>state.myHospitalization,
-    displaypastHospitalization:state=>state.pastHospitalization,
-    displaypconsultation:state=>state.consultation,
-    },
-    
-  
+    displaySex: state => state.sex,
+    displaybirthYear: state => state.birthYear,
+    displaybirthMonth: state => state.birthMonth,
+    displaybirthDay: state => state.birthDay,
+    displaymyInsurance: state => state.myInsurance,
+    displaymyHospitalization: state => state.myHospitalization,
+    displaypastHospitalization: state => state.pastHospitalization,
+    consultation: state => state.message
+  },
+
+
   mutations: {
-    addSex(state,i) {
+    addSex(state, i) {
       state.sex = i;
     },
-    addBirthMonth(state,i) {
+    addBirthMonth(state, i) {
       state.birthMonth = i;
     },
-    addBirthYear(state,i) {
+    addBirthYear(state, i) {
       state.birthYear = i;
     },
-    addBirthDay(state,i) {
+    addBirthDay(state, i) {
       state.birthDay = i;
     },
-    addMyInsurance(state,i) {
+    addMyInsurance(state, i) {
       state.myInsurance = i;
     },
-    addMyHospitalization(state,i) {
+    addMyHospitalization(state, i) {
       state.myHospitalization = i;
     },
-    addPastHospitalization(state,i) {
+    addPastHospitalization(state, i) {
       state.pastHospitalization = i;
     },
-    addConsultation(state,i) {
+    addConsultation(state, i) {
       state.consultation = i;
     },
   },
-  actions: {
-  },
-  modules: {
-  }
+  
 })

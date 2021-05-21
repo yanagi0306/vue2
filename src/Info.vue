@@ -1,7 +1,5 @@
 <template>
   <div>
-    
-    
     <table>
       <tr>
         お客様情報を入力して下さい
@@ -10,7 +8,7 @@
         <P>-性別-</P>
         <input type="radio" name="sex" value="男性" v-model="sex" />
         <label> 男性 </label>
-        <input type="radio" name="sex" value="女性" v-model="sex"  />
+        <input type="radio" name="sex" value="女性" v-model="sex" />
         <label> 女性 </label>
         <p>-生年月日-</p>
         <select v-model="birthYear">
@@ -33,44 +31,40 @@
       </tr>
     </table>
 
-    <router-link to="/question" tag="button" v-on:click.native="add()">次へ進む</router-link>
+    <router-link to="/question" tag="button" v-on:click.native="add()"
+      >次へ進む</router-link
+    >
   </div>
 </template>
   
 <script>
-
 export default {
-  computed:{
-  },
   methods: {
-    addSex(){
-      this.$store.commit('addSex',this.sex);
+    addSex() {
+      this.$store.commit("addSex", this.sex);
     },
-    addBirthYear(){
-      this.$store.commit('addBirthYear',this.birthYear)
+    addBirthYear() {
+      this.$store.commit("addBirthYear", this.birthYear);
     },
-    addBirthMonth(){
-      this.$store.commit('addBirthMonth',this.birthMonth)
+    addBirthMonth() {
+      this.$store.commit("addBirthMonth", this.birthMonth);
     },
-    addBirthDay(){
-      this.$store.commit('addBirthDay',this.birthDay)
+    addBirthDay() {
+      this.$store.commit("addBirthDay", this.birthDay);
     },
-    add(){
-      this.addSex()
-      this.addBirthYear()
-      this.addBirthMonth()
-      this.addBirthDay()
+    add() {
+      this.addSex();
+      this.addBirthYear();
+      this.addBirthMonth();
+      this.addBirthDay();
     },
   },
-  
-  
-  
   data() {
     return {
-      sex: '',
-      birthYear: '',
-      birthMonth: '',
-      birthDay: '',
+      sex: "",
+      birthYear: "",
+      birthMonth: "",
+      birthDay: "",
     };
   },
 };

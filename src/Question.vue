@@ -67,7 +67,9 @@
       </tr>
     </table>
     <router-link to="/" tag="button">前へ戻る</router-link>
-    <router-link to="/consultation" tag="button" v-on:click.native="add()">次へ進む</router-link>
+    <router-link to="/consultation" tag="button" v-on:click.native="add()"
+      >次へ進む</router-link
+    >
   </div>
 </template>
 
@@ -75,9 +77,9 @@
 export default {
   data() {
     return {
-      myInsurance: '',
-      myHospitalization: '',
-      pastHospitalization: '',
+      myInsurance: "",
+      myHospitalization: "",
+      pastHospitalization: "",
     };
   },
   methods: {
