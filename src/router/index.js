@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Info from '../Info.vue'
 import Question from '../Question.vue'
 import Consultation from '../Consultation.vue'
+import Result from '../Result.vue'
 
 
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/consultation',
     name: 'Consultation',
     component: Consultation
+  },
+  {
+    path: '/result',
+    name: 'Result',
+    component: Result
   }
 ]
 
