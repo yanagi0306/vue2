@@ -9,6 +9,7 @@
         <textarea rows="12" cols="50" v-model="consultation"></textarea>
       </tr>
     </table>
+
     <router-link to="/Question" tag="button">前へ戻る</router-link>
     <router-link to="/result" tag="button" v-on:click.native="addConsultation()"
       >次へ進む</router-link
@@ -20,12 +21,12 @@
 export default {
   data() {
     return {
-      consultation: "",
+      consultation: '',
     };
   },
   methods: {
     addConsultation() {
-      this.$store.commit("addConsultation", this.consultation);
+      this.$store.commit('addConsultation', this.consultation);
     },
   },
 };

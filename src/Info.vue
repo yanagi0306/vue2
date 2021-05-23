@@ -36,21 +36,21 @@
     >
   </div>
 </template>
-  
+
 <script>
 export default {
   methods: {
     addSex() {
-      this.$store.commit("addSex", this.sex);
+      this.$store.commit('addSex', this.sex);
     },
     addBirthYear() {
-      this.$store.commit("addBirthYear", this.birthYear);
+      this.$store.commit('addBirthYear', this.birthYear);
     },
     addBirthMonth() {
-      this.$store.commit("addBirthMonth", this.birthMonth);
+      this.$store.commit('addBirthMonth', this.birthMonth);
     },
     addBirthDay() {
-      this.$store.commit("addBirthDay", this.birthDay);
+      this.$store.commit('addBirthDay', this.birthDay);
     },
     add() {
       this.addSex();
@@ -61,10 +61,10 @@ export default {
   },
   data() {
     return {
-      sex: "",
-      birthYear: "",
-      birthMonth: "",
-      birthDay: "",
+      sex: '',
+      birthYear: '',
+      birthMonth: '',
+      birthDay: '',
     };
   },
 };
