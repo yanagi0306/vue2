@@ -27,25 +27,25 @@
         <p>{{ displaypconsultation }}</p>
       </tr>
     </table>
+
     <router-link to="/consultation" tag="button">前へ戻る</router-link>
     <router-link to="/" tag="button">送信</router-link>
   </div>
 </template>
 
-<script >
-import { mapGetters } from "vuex";
+<script>
+import { mapGetters } from 'vuex';
 export default {
   computed: mapGetters([
-    "displaySex",
-    "displaybirthYear",
-    "displaybirthMonth",
-    "displaybirthDay",
-    "displaymyInsurance",
-    "displaymyHospitalization",
-    "displaypastHospitalization",
-    "displaypconsultation",
+    'displaySex',
+    'displaybirthYear',
+    'displaybirthMonth',
+    'displaybirthDay',
+    'displaymyInsurance',
+    'displaymyHospitalization',
+    'displaypastHospitalization',
+    'displaypconsultation',
   ]),
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

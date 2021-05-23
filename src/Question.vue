@@ -66,6 +66,7 @@
         </div>
       </tr>
     </table>
+
     <router-link to="/" tag="button">前へ戻る</router-link>
     <router-link to="/consultation" tag="button" v-on:click.native="add()"
       >次へ進む</router-link
@@ -77,20 +78,20 @@
 export default {
   data() {
     return {
-      myInsurance: "",
-      myHospitalization: "",
-      pastHospitalization: "",
+      myInsurance: '',
+      myHospitalization: '',
+      pastHospitalization: '',
     };
   },
   methods: {
     addmyInsurance() {
-      this.$store.commit("addMyInsurance", this.myInsurance);
+      this.$store.commit('addMyInsurance', this.myInsurance);
     },
     addmyHospitalization() {
-      this.$store.commit("addMyHospitalization", this.myHospitalization);
+      this.$store.commit('addMyHospitalization', this.myHospitalization);
     },
     addpastHospitalization() {
-      this.$store.commit("addPastHospitalization", this.pastHospitalization);
+      this.$store.commit('addPastHospitalization', this.pastHospitalization);
     },
     add() {
       this.addmyInsurance();
